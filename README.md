@@ -1,9 +1,8 @@
-# Basic ETL process on excel bulk file
+# Last Active User ETL upsert method
 
-Purpose: To transform and load bulk excel file into database through python
-Tools: Jupyter Notebook and sqlachemy package
-Language: python
+Description: 
+I have learn two ways to proceed the upsert method (insert + update) with last_active_user metric through python and SQL. It serves with different purpose depend on the destination source. For example, we want to transfers the executed result from last_active_user to db. Through python, we can use temp_table to extract the latest active and insert it into the table using SQL (INSERT INTO DO UPDATE). 
 
-## Process
 
-- 
+## Process 
+
