@@ -5,4 +5,5 @@ I have learn two ways to proceed the upsert method (insert + update) with last_a
 
 
 ## Process 
+![flow](last_active_etl.drawio.png)
 
