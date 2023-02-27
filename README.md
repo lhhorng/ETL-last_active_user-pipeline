@@ -6,7 +6,7 @@ I have learn two ways to proceed the upsert method (insert + update) with last_a
 
 ## Process
 
-![Logic flowchart](
+![Logic flowchart](flow.png)
 
 ### Story:
 Upsert method is really demand for transactional data since it needs to be insert and update on a daily basis. However, the story that i have learn about it coming from two version that shown in the picture. Version 1 was consider the harder way as it need to be transform the sql script through python. If the source is in the same destination, it will be more workable to insert the update condition WITHIN the sql script just fine. (As shown in the v2)
