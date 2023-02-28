@@ -8,11 +8,15 @@ I have learn two ways to proceed the upsert method (insert + update) with last_a
 
 ![Logic flowchart](flowchart.png)
 
-### The 'How':
-Upsert method is really demand for transactional data since it needs to be insert and update on a daily basis. However, the story that i have learn about it coming from two version that shown in the picture. Version 1 was consider the harder way as it need to be transform the sql script through python. If the source is in the same destination, it will be more workable to insert the update condition WITHIN the sql script just fine. (As shown in the v2)
-Version 2 is the way we handle the upsert method using INSERT INTO DO UPDATE) ready within the script. Then we just need to use python to execute and read the query. It is shorter! (learn with optimize way from the boss, LOL). Both way is the same!
 
 
 
+Context
+
+This is data dealing with mobile app usage of the customers, where an app has some personal information and online active timing of the customers. There are a lot of customers on this online platform. Whenever they login in-app and view anything, the app server gets pings from their mobile phone indicating that they are using the app. We have been provided with 3 weeks of training data and 1 week of test data. Training data contains id, gender, age, number of kids the customer has a and all the pings that have been received (during the training data period).
+
+Our interest lies in predicting how many hours the customer will be online / using our app on a given day. So the test data contains customer id, and date (during the test data period). The test data also contains the actual online hours, which is what your model should predict.
+
+We will be looking at Root Mean Squared Error or RMSE for short (lower the better) to see how good your model is.
 
 
