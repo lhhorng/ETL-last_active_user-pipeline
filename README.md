@@ -13,6 +13,6 @@ Upsert method is really demand for transactional data since it needs to be inser
 Version 2 is the way we handle the upsert method using INSERT INTO DO UPDATE) ready within the script. Then we just need to use python to execute and read the query. It is shorter! (learn with optimize way from the boss, LOL). Both way is the same!
 
 
-![How](last_active_etl.drawio.png)
+
 
 
