@@ -17,10 +17,11 @@ As explain in the description, our purpose is to get the lastest info about cust
 Since the customer_active_hour table was already existed in the database, we can only using upsert method to update the table by its lastest day. However, the common step that we ussually see is manipulating the data using SQL and transfer to data warehouse for further analysis tools. Therefore, this is what we are doing here. 
 
 We have our initial load till 27 June 2017 (as above) 
+
 ![cus_tbl](cus_active_hour-27.png)
 
 
-Our code:
+
 
 
 
