@@ -11,12 +11,15 @@ I have learn two ways to proceed the upsert method (insert + update) with last_a
 
 
 
-Context
+Context:
+As explain in the description, our purpose is to get the lastest info about customer info and their active hours. So, we need a pipeline that could automate that task. 
 
-This is data dealing with mobile app usage of the customers, where an app has some personal information and online active timing of the customers. There are a lot of customers on this online platform. Whenever they login in-app and view anything, the app server gets pings from their mobile phone indicating that they are using the app. We have been provided with 3 weeks of training data and 1 week of test data. Training data contains id, gender, age, number of kids the customer has a and all the pings that have been received (during the training data period).
+Since the customer_active_hour table was already existed in the database, we can only using upsert method to update the table by its lastest day. However, the common step that we ussually see is manipulating the data using SQL and transfer to data warehouse for further analysis tools. Therefore, this is what we are doing here. 
 
-Our interest lies in predicting how many hours the customer will be online / using our app on a given day. So the test data contains customer id, and date (during the test data period). The test data also contains the actual online hours, which is what your model should predict.
 
-We will be looking at Root Mean Squared Error or RMSE for short (lower the better) to see how good your model is.
+![Logic flowchart](flowchart.png)
+
+
+
 
 
