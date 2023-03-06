@@ -20,6 +20,8 @@ We have our initial load till 27 June 2017 (as above)
 
 ![cus_tbl](cus_active_hour-27.png)
 
+##Data source: (https://www.kaggle.com/datasets/jtrotman/user-achievements-snapshots)
+
 
 
 
