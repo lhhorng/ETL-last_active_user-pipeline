@@ -6,11 +6,11 @@ I have learn two ways to proceed the upsert method (insert + update) with last_a
 
 ## Process
 
-![Logic flowchart](flowchart.png)
+![Logic flowchart](bulk_load_vs_incremental_load.png)
 
 
 
-##Context:
+## Context:
 
 As explain in the description, our purpose is to get the lastest info about customer info and their active hours. So, we need a pipeline that could automate that task. 
 
