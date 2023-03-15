@@ -10,7 +10,7 @@ Bulk Load is when you load everything into your destination. Meanwhile, incremen
 - Initial load or historical load
 - Incremental load
 
-![Logic flowchart](bulk_load_vs_incremental_load.png)
+![Logic flowchart](ETL_incremental_load.png)
 
 
 
