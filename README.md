@@ -26,7 +26,10 @@ Customer_active_hour table                          |       Customer_info Table 
 
 
 
-##Data source: ()
+
+I want to get the metric of last_active_customer. So, the script would be: 
+
+![last_active_cus](last_active_cus_script.PNG)   |   ![last_active_cus]()
 
 
 
