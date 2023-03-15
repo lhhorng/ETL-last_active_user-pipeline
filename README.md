@@ -18,7 +18,7 @@ Bulk Load is when you load everything into your destination. Meanwhile, incremen
 
 As explain in the description, our purpose is to get the lastest info about customer info and their active hours. So, we need a pipeline that could give us the _UPDATED_ user with their lastest transaction. So, we need an initial load of the previous record of user transaction and then we will use the append or updated for the last transaction of the users. 
 
-[Customer_active_hour table]()                          |       Customer_info Table                |
+Customer_active_hour table                         |       Customer_info Table                |
 -- | --
 ![customer_active_hour_tbl](customer_active_hour.PNG)    |     ![customer_info_tbl](customer_info.PNG)
 
