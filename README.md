@@ -1,3 +1,5 @@
+![build_last_active_cus]()
+
 # Build Last Active User ETL pipeline
 
 ## Description: 
@@ -100,7 +102,6 @@ cursor1.close()
 con.close()
 
 ```
-
 
 
 
