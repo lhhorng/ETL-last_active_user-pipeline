@@ -7,8 +7,8 @@ I have learn two ways to proceed the upsert method (insert + update) with last_a
 ## **Bulk Load Vs Incremental Load**
 
 Bulk Load is when you load everything into your destination. Meanwhile, incremental load process ususally divide into two parts:
-- Initial load or historical load
-- Incremental load
+- [Initial load or historical load](https://hevodata.com/learn/initial-load-vs-full-load-etl/)
+- [Incremental load](https://www.stitchdata.com/etldatabase/etl-load/)
 
 ![Logic flowchart](ETL_incremental_load.png)
 
