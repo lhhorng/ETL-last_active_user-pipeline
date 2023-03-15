@@ -29,7 +29,7 @@ Customer_active_hour table                         |       Customer_info Table  
 
 I want to get the metric of last_active_customer. So, the script would be: 
 
-## Script:
+## 🛠 SQL Script:
 ```ruby
 select
 o.*,
@@ -60,7 +60,7 @@ order by id,date desc
 
 > **If the same customer who has been online in the following day, then the last_online_date column will be updated. Therefore, i just need to execute the following code below to set the condition of append (if there was a new user who online) and updated (if the same user are online in the new day)**
 
-## Code:
+## 🛠 Code:
 
 ```ruby
 import pandas as pd
