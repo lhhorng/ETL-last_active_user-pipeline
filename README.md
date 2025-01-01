@@ -1,4 +1,4 @@
-![build_last_active_cus](Build last Active Customer..png)
+![build_last_active_cus] (Build last Active Customer..png)
 
 # Build Last Active User ETL pipeline
 
