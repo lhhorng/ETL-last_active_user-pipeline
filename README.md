@@ -11,7 +11,7 @@ Bulk Load is when you load everything into your destination. Meanwhile, incremen
 - [Initial load or historical load](https://hevodata.com/learn/initial-load-vs-full-load-etl/)
 - [Incremental load](https://www.stitchdata.com/etldatabase/etl-load/)
 
-![Logic flowchart](ETL_incremental_load.png)
+![Logic flowchart](images/ETL_incremental_load.png)
 
 
 
@@ -21,7 +21,7 @@ As explain in the description, our purpose is to get the lastest info about cust
 
 Customer_active_hour table                         |       Customer_info Table                |
 -- | --
-![customer_active_hour_tbl](customer_active_hour.PNG)    |     ![customer_info_tbl](customer_info.PNG)
+![customer_active_hour_tbl](images/customer_active_hour.PNG)    |     ![customer_info_tbl](images/customer_info.PNG)
 
 
 
