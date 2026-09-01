@@ -72,7 +72,7 @@ from datetime import datetime
 
 
 con = psycopg2.connect(
-    host = 'db.bit.io', -- I am using Bit.io 
+    host = 'db.bit.io', // I am using Bit.io 
     port = 5432,
     user = 'lhhorng',
     password = 'v2_427YJ_psP5ieRgM3hJva6yVaSAjbH',
