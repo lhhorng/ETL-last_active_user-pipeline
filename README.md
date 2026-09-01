@@ -1,3 +1,4 @@
+This repository showcases my work in data engineering, focusing on building reliable ETL pipelines for processing raw business data and loading it into databases for analysis and reporting.
 
 # Build Last Active User ETL pipeline
 
