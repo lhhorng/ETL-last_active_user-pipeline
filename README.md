@@ -23,7 +23,7 @@ First, the full load method could be useful with the small data volumn and the o
 
 ![full load flow](images/full_load_flow_png.PNG)
 
-Sample Dataset: (https://github.com/lhhorng/etl_bulk_load/tree/main/dataset)
+Sample Dataset: (https://github.com/lhhorng/ETL-last_active_user-pipeline/tree/93d8ea007e85ae51f397c93e06a4aa702cd4f730/example1_sample_dataset)
 
 ## 🛠 Code:
 ```ruby
