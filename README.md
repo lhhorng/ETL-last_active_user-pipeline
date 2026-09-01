@@ -14,8 +14,67 @@ Bulk Load is when you load everything into your destination. Meanwhile, incremen
 ![Logic flowchart](images/ETL_incremental_load.png)
 
 
+## Example 1:
+### ETL Bulk Load
 
-## Context:
+A simple way to perform ETL task is bulk load or full load. By transfer the source data(.xlsx,.sql...) to destination. 
+In full load, the whole dataset is fully load by overwirte with new dataset. There are pros and cons in term of full load.
+First, the full load method could be useful with the small data volumn and the one-time insert.
+
+![full load flow](https://github.com/lhhorng/etl_bulk_load/blob/f48d0ad9e08755b24e1e9e061c8c85c187298f23/full_load_flow_png.PNG)
+
+Sample Dataset: (https://github.com/lhhorng/etl_bulk_load/tree/main/dataset)
+
+## 🛠 Code:
+```ruby
+#!/usr/bin/env python
+# coding: utf-8
+
+# Import library 
+import pandas as pd
+import os
+import time
+import schedule
+
+#Give the file path 
+cwd = os.path.abspath(r"C:\Users\Documents\bulk_load") 
+files = os.listdir(cwd)
+df = pd.DataFrame()
+
+#Append for the new data 
+for file in files:
+     if file.endswith('.xlsx'): 
+        df = df.append(pd.read_excel(file),ignore_index = True) #read and append if it is new .xlsx file
+
+
+#Connect to postgres Engine
+from sqlalchemy import create_engine
+from datetime import datetime
+
+
+#credential
+conn_string = 'postgresql+psycopg2://username:password@host:port/database'
+db = create_engine(conn_string)
+conn = db.connect()
+
+#Push to postgres and set query duration
+start_time = time.time()
+df.to_sql(
+    'sale_transaction', 
+    con = conn,
+    if_exists = "append",
+    schema='public',   
+    index=False,
+)
+print("to_sql duration: {} seconds".format(time.time() - start_time))
+```
+
+
+
+
+## Example 2:
+
+### Context:
 
 As explain in the description, our purpose is to get the lastest info about customer info and their active hours. So, we need a pipeline that could give us the _UPDATED_ user with their lastest transaction. So, we need an initial load of the previous record of user transaction and then we will use the append or updated for the last transaction of the users. 
 
